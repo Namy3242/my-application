@@ -5,4 +5,7 @@ import react from '@vitejs/plugin-react'
 export default defineConfig({
   base: '/my-app/', // リポジトリ名に置き換えてください
   plugins: [react()],
+  define: {
+    'process.env': process.env
+  }
 })
